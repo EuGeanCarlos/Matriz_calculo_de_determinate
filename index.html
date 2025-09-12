@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="style.css">
+  <title>Determinante — Passo a Passo</title>
+</head>
+<body>
+
+  <header class="cabecario">
+    <div class="dados-curso">
+      <h1 class="curso">Engenharia da Computação</h1>
+      <h2>Geometria Analítica e Álgebra Linear</h2>
+      <h2>Professor: Elder Abreu</h2>
+      <p>
+       <strong> Alunos:</strong>  João Miguel Ewerton, Gean Carlos, Roosevelt Alves, Isaac Sales, Pedro Hugo
+      </p>
+    </div>
+  </header>
+
+  <main>
+    <h1>Determinante — passo a passo</h1>
+    <p class="lead">
+      Exibição da matriz, cálculo detalhado por expansão de Laplace e Sarrus (3×3), e resultado final.
+    </p>
+
+    <div class="wrap">
+      <!-- Coluna esquerda: matriz e controles -->
+      <div class="card">
+        <div class="matrix-title">Matriz A (4×4)</div>
+        <div id="matrixContainer"></div>
+
+        <div class="controls">
+          <button id="btnCalc">Calcular e mostrar passos</button>
+          <button class="ghost" id="btnClear">Ocultar passos</button>
+        </div>
+
+        <div class="hint">
+          Dica: a expansão é feita automaticamente na melhor linha (mais zeros) para reduzir passos.
+        </div>
+      </div>
+
+      <!-- Coluna direita: passos e resultado -->
+      <div class="steps card">
+        <div style="display:flex;justify-content:space-between;align-items:center;">
+          <div style="font-size:16px;font-weight:700;color:#00f5ff">Passos da resolução</div>
+          <div id="miniResult" style="font-weight:800;color:#ff00d4"></div>
+        </div>
+
+        <div id="stepsArea" style="margin-top:12px;"></div>
+
+        <div id="finalResult" class="resultado" style="display:none;"></div>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

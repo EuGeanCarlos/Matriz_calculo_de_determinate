@@ -1,0 +1,159 @@
+/* Fonte moderna e clean */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+:root {
+  --bg: #ffffff;
+  --card: #ffffff;
+  --accent: #0056d6;
+  --muted: #555;
+  --text: #111;
+}
+
+/* Base */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  padding: 28px;
+  line-height: 1.6;
+}
+
+/* Títulos */
+h1 {
+  margin: 0 0 10px;
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+p.lead {
+  margin: 0 0 20px;
+  color: var(--muted);
+  font-size: 15px;
+}
+
+/* Layout */
+.wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+/* Card */
+.card {
+  background: var(--card);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+  border: 1px solid rgba(0,0,0,0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.matrix-title {
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+/* Tabela da matriz */
+.matrix-table {
+  border-collapse: collapse;
+  margin: 8px 0;
+}
+
+.matrix-table td {
+  border: 1px solid #ddd;
+  padding: 10px 12px;
+  min-width: 34px;
+  text-align: center;
+  font-weight: 600;
+  background: #f9f9f9;
+  border-radius: 6px;
+}
+
+/* Botões */
+.controls {
+  display: flex;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: var(--accent);
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: #0041a8;
+  transform: translateY(-2px);
+}
+
+button.ghost {
+  background: transparent;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+}
+
+button.ghost:hover {
+  background: #f2f6ff;
+}
+
+/* Passos */
+.steps {
+  background: var(--card);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+  border: 1px solid rgba(0,0,0,0.05);
+}
+
+.resultado {
+  margin-top: 12px;
+  background: #f2f6ff;
+  padding: 12px;
+  border-radius: 10px;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.step-block {
+  margin-bottom: 12px;
+  font-family: 'Fira Code', ui-monospace, monospace;
+  white-space: pre-wrap;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Detalhes */
+details { margin-bottom: 8px; }
+summary { font-weight: 600; cursor: pointer; color: var(--accent); }
+.minor-matrix td {
+  padding: 6px 8px;
+  font-weight: 600;
+  background: #fff;
+}
+
+/* Pequena dica */
+.hint {
+  font-size: 13px;
+  color: var(--muted);
+  margin-top: 8px;
+  font-style: italic;
+}
