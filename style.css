@@ -19,15 +19,42 @@ body {
   line-height: 1.6;
 }
 
+/* Header */
+.cabecario{
+
+  padding: 20px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+  border: 1px solid rgba(0,0,0,0.05);
+  border-radius: 10px;
+  margin-bottom: 25px;
+
+}
+
+header.cabecario .dados-cursos p{
+  
+  font-size: 17px;
+
+}
+
+main{
+
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+  border: 1px solid rgba(0,0,0,0.05);
+  padding: 20px;
+  border-radius: 15px;
+}
+
 /* Títulos */
 h1 {
   margin: 0 0 10px;
   font-size: 26px;
   font-weight: 700;
   color: var(--text);
+  text-align: center;
 }
 
 p.lead {
+  text-align: center;
   margin: 0 0 20px;
   color: var(--muted);
   font-size: 15px;
