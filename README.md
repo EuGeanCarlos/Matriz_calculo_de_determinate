@@ -24,7 +24,7 @@ Requer Python 3 para o servidor local. Abra http://localhost:8000.
 
 ## Demonstração e publicação
 
-Execução local. Nenhuma demonstração nova foi confirmada nesta etapa.
+[Acessar demonstração verificada](https://eugeancarlos.github.io/Matriz_calculo_de_determinate/)
 
 ## Estrutura versionada
 
@@ -70,3 +70,7 @@ O material original a seguir preserva contexto, créditos e planejamento. Para e
     Observação: o código é genérico o suficiente para matrizes quadradas (tratando
     casos base 1×1, 2×2 e 3×3 com detalhes).
    
+
+## Validação desta auditoria — 14/10/2026
+
+PUBLICADO: [workflow confirmado](https://github.com/EuGeanCarlos/Matriz_calculo_de_determinate/actions/runs/38605955212), HTTP 200, conteúdo correspondente ao projeto e 2 recursos locais verificados. Empacotamento local e sintaxe dos arquivos JavaScript verificados; teste funcional completo e responsividade não foram executados.
